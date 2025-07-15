@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun Emporium</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+      <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                Gun<span>Emporium</span>
+            </a>
+
+            <div class="mobile-menu-toggle-wrapper">
+                <button id="mobile-menu-button" class="hamburger-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Nav links (visible on desktop, hidden on mobile by default) -->
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+                <a href="#products" class="shop-now-btn">
+                    Shop Now
+                </a>
+            </div>
+              <!-- Login button (visible on desktop and mobile only) -->
+            <div class="hidden md:block ml-6">
+                <a href="#" id="login-nav-btn" class="bg-red-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105 font-medium">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="container">
+            <h1>
+                Precision. Power. Performance.
+            </h1>
+            <p>
+                Explore our curated collection of firearms, designed for enthusiasts and professionals alike.
+            </p>
+            <button class="view-products-btn" onclick="window.location.href='#products'">
+                View All Products
+            </button>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section id="products">
+            <h2 class="section-heading">Our Featured Collection</h2>
+
+            <div class="product-grid">
+
+                <div class="product-card">
+                    <img src="assult rifle.webp" alt="Assault Rifle" class="product-image">
+                    <div class="product-info">
+                        <h3>Tactical Assault Rifle</h3>
+                        <p>High-performance rifle for tactical operations. Durable and reliable.</p>
+                        <div class="price-rating">
+                            <span class="price">$1,899.99</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="sig-sauer-p320-m18-9mm-pistol-1500x1000.jpg" alt="Compact Handgun" class="product-image">
+                    <div class="product-info">
+                        <h3>Compact Service Handgun</h3>
+                        <p>Ideal for personal defense and concealed carry. Ergonomic design.</p>
+                        <div class="price-rating">
+                            <span class="price">$649.99</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="shot gun.jpeg" alt="Pump-Action Shotgun" class="product-image">
+                    <div class="product-info">
+                        <h3>Hunting Pump-Action Shotgun</h3>
+                        <p>Versatile shotgun for hunting and sport shooting. Reliable action.</p>
+                        <div class="price-rating">
+                            <span class="price">$899.99</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="semi-automatic-long-range-sniper-rifle.webp" alt="Sniper Rifle" class="product-image">
+                    <div class="product-info">
+                        <h3>Long-Range Precision Rifle</h3>
+                        <p>Designed for extreme accuracy at long distances. Adjustable stock.</p>
+                        <div class="price-rating">
+                            <span class="price">$2,499.99</span>
+                            <span class="rating">★★★★★</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="AHSO13-357-2.jpg" alt="Classic Revolver" class="product-image">
+                    <div class="product-info">
+                        <h3>Classic .357 Magnum Revolver</h3>
+                        <p>Timeless design with powerful stopping power. Smooth trigger pull.</p>
+                        <div class="price-rating">
+                            <span class="price">$799.99</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="sub machine.jpg" alt="Submachine Gun" class="product-image">
+                    <div class="product-info">
+                        <h3>Compact Submachine Gun</h3>
+                        <p>Lightweight and high rate of fire for close-quarters combat.</p>
+                        <div class="price-rating">
+                            <span class="price">$1,599.99</span>
+                            <span class="rating">★★★★☆</span>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2 class="section-heading">About Us</h2>
+            <p>
+                At Gun Emporium, we are dedicated to providing our customers with the highest quality firearms and accessories. Our commitment to safety, accuracy, and customer satisfaction sets us apart in the industry. We offer a wide range of products for enthusiasts, sport shooters, and professionals alike, ensuring every need is met.
+            </p>
+            <p>
+                We believe that every customer should receive the best information and support to make informed decisions. Our team is composed of experienced specialists who are always ready to assist you in choosing the right product.
+            </p>
+
+            <h3 class="section-heading" style="font-size: 1.75rem; margin-top: 3rem;">Meet Our Team</h3>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://placehold.co/100x100/FF0000/FFFFFF?text=J.D." alt="John Doe">
+                    <h4>John Doe</h4>
+                    <p>CEO & Founder</p>
+                    <p>Over 20 years of experience in the firearms industry.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://placehold.co/100x100/0000FF/FFFFFF?text=J.S." alt="Jane Smith">
+                    <h4>Jane Smith</h4>
+                    <p>Chief Product Officer</p>
+                    <p>Expert in product development and innovation.</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://placehold.co/100x100/00FF00/FFFFFF?text=M.B." alt="Mike Brown">
+                    <h4>Mike Brown</h4>
+                    <p>Customer Relations Manager</p>
+                    <p>Dedicated to providing excellent customer service.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2 class="section-heading">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h3>Send Us a Message</h3>
+                    <form class="contact-form">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Our Contact Information</h3>
+                    <p><strong>Address:</strong> 123 Gun Avenue, Weapon City, India</p>
+                    <p><strong>Phone:</strong> +91 12345 67890</p>
+                    <p><strong>Email:</strong> info@gunemporium.com</p>
+                    <p><strong>Working Hours:</strong> Monday - Friday: 9 AM to 6 PM</p>
+                    <div class="map-placeholder">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31107.791097593726!2d77.67423525!3d26.8467264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd9914296dcf%3A0xfc7d7a6687fd27a9!2sGomti%20Nagar%2C%20Lucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1720571170158!5m2!1sen!2sin"
+                        width="100%"
+                        height="250"
+                        style="border:0; border-radius: 0.5rem; margin-top: 1.5rem;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+        <section id="signin" class="auth-section main-section">
+            <h2 class="text-4xl font-bold text-gray-800 mb-10">Sign In</h2>
+            <div class="auth-form max-w-md mx-auto p-8 bg-blue-50 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Welcome Back!</h3>
+                <form id="signin-form" class="space-y-4">
+                    <div>
+                        <label for="signin-email" class="block text-gray-700 font-semibold mb-2 text-left">Email:</label>
+                        <input type="email" id="signin-email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="signin-password" class="block text-gray-700 font-semibold mb-2 text-left">Password:</label>
+                        <input type="password" id="signin-password" name="password" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out">Sign In</button>
+                </form>
+                <p class="text-sm text-gray-600 mt-6">Don't have an account? <a href="#" onclick="showSection('signup'); return false;" class="text-blue-600 font-semibold hover:underline">Sign Up</a></p>
+            </div>
+        </section>
+
+        <section id="signup" class="auth-section main-section">
+            <h2 class="text-4xl font-bold text-gray-800 mb-10">Sign Up</h2>
+            <div class="auth-form max-w-md mx-auto p-8 bg-blue-50 rounded-lg shadow-md">
+                <h3 class="text-2xl font-semibold text-gray-900 mb-6">Create Your Account</h3>
+                <form id="signup-form" class="space-y-4">
+                    <div>
+                        <label for="signup-name" class="block text-gray-700 font-semibold mb-2 text-left">Name:</label>
+                        <input type="text" id="signup-name" name="name" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="signup-email" class="block text-gray-700 font-semibold mb-2 text-left">Email:</label>
+                        <input type="email" id="signup-email" name="email" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="signup-password" class="block text-gray-700 font-semibold mb-2 text-left">Password:</label>
+                        <input type="password" id="signup-password" name="password" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <div>
+                        <label for="signup-confirm-password" class="block text-gray-700 font-semibold mb-2 text-left">Confirm Password:</label>
+                        <input type="password" id="signup-confirm-password" name="confirm-password" required class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-md transition duration-300 ease-in-out">Sign Up</button>
+                </form>
+                <p class="text-sm text-gray-600 mt-6">Already have an account? <a href="#" onclick="showSection('signin'); return false;" class="text-blue-600 font-semibold hover:underline">Sign In</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-8 mt-12 rounded-t-lg shadow-inner">
+        <div class="container footer-content">
+            <p>&copy; 2025 Gun Emporium. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Shipping & Returns</a>
+            </div>
+        </div>
+    </footer>
+     <div id="message-box" class="message-box">
+        <div class="message-content">
+            <p id="message-text"></p>
+            <button id="message-close-btn" class="message-close-btn">OK</button>
+        </div>
+    </div>
+
+<script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const navLinks = document.querySelector('.nav-links');
+        const mainSections = document.querySelectorAll('.main-section');
+        const loginNavButton = document.getElementById('login-nav-btn');
+
+        function showSection(sectionId) {
+            mainSections.forEach(section => {
+                if (section.id === sectionId) {
+                    section.classList.add('active-section');
+                } else {
+                    section.classList.remove('active-section');
+                }
+            });
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+            const targetSection = document.getElementById(sectionId);
+            const navHeight = document.querySelector('nav').offsetHeight;
+            window.scrollTo({
+                top: targetSection.offsetTop - navHeight,
+                behavior: 'smooth'
+            });
+        }
+
+        mobileMenuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        if (loginNavButton) {
+            loginNavButton.addEventListener('click', (event) => {
+                event.preventDefault();
+                showSection('signin');
+            });
+        }
+
+        navLinks.querySelectorAll('a[data-section]').forEach(link => {
+            link.addEventListener('click', (event) => {
+                event.preventDefault();
+                const sectionId = link.getAttribute('data-section');
+                showSection(sectionId);
+            });
+        });
+
+        function showMessageBox(message) {
+            const msgBox = document.getElementById('message-box');
+            const msgText = document.getElementById('message-text');
+            const msgCloseBtn = document.getElementById('message-close-btn');
+
+            msgText.textContent = message;
+            msgBox.classList.add('show');
+
+            msgCloseBtn.onclick = () => {
+                msgBox.classList.remove('show');
+            };
+        }
+
+        const contactForm = document.querySelector('.contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                console.log('Contact form submitted');
+                showMessageBox('Your message has been sent successfully!');
+                contactForm.reset();
+            });
+        }
+
+        const signInForm = document.getElementById('signin-form');
+        if (signInForm) {
+            signInForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                console.log('Sign In form submitted');
+                showMessageBox('Sign In attempt. (Functionality not fully implemented)');
+            });
+        }
+
+        const signUpForm = document.getElementById('signup-form');
+        if (signUpForm) {
+            signUpForm.addEventListener('submit', (event) => {
+                event.preventDefault();
+                console.log('Sign Up form submitted');
+                showMessageBox('Sign Up attempt. (Functionality not fully implemented)');
+            });
+        }
+
+        // Gemini API Integration for "Ask an Expert"
+        const askExpertButton = document.getElementById('ask-expert-btn');
+        const expertQuestionInput = document.getElementById('expert-question');
+        const expertAnswerDiv = document.getElementById('expert-answer');
+        const expertAnswerText = document.getElementById('expert-answer-text');
+        const askExpertBtnText = document.getElementById('ask-expert-btn-text');
+        const askExpertSpinner = document.getElementById('ask-expert-spinner');
+
+        if (askExpertButton) {
+            askExpertButton.addEventListener('click', async () => {
+                const prompt = expertQuestionInput.value.trim();
+                if (!prompt) {
+                    showMessageBox('Please enter your question.');
+                    return;
+                }
+
+                askExpertBtnText.textContent = 'Getting Answer...';
+                askExpertSpinner.classList.remove('hidden');
+                askExpertButton.disabled = true;
+                expertAnswerDiv.classList.add('hidden');
+                expertAnswerText.textContent = '';
+
+                try {
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: `Act as a firearms expert and answer the following question: ${prompt}` }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // Canvas will provide this at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        expertAnswerText.textContent = text;
+                        expertAnswerDiv.classList.remove('hidden');
+                    } else {
+                        expertAnswerText.textContent = 'Unable to get answer. Please try again.';
+                        expertAnswerDiv.classList.remove('hidden');
+                    }
+                } catch (error) {
+                    console.error('Gemini API call failed:', error);
+                    showMessageBox('Error getting answer. Please check your internet connection and try again.');
+                    expertAnswerText.textContent = 'Error getting answer.';
+                    expertAnswerDiv.classList.remove('hidden');
+                } finally {
+                    askExpertBtnText.textContent = 'Get Answer';
+                    askExpertSpinner.classList.add('hidden');
+                    askExpertButton.disabled = false;
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+
+   
